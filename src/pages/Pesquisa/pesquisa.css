@@ -1,0 +1,135 @@
+.pesquisa-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pesquisa-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #ffffff;
+  border: 2px solid #C7C7CB;
+  border-radius: 30px;
+  padding: 0.9rem 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.pesquisa-input-wrapper:focus-within {
+  border-color: #22DA1C;
+}
+
+.pesquisa-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #19191D;
+}
+
+.pesquisa-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pesquisa-filter-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #C3C3FB;
+  color: #06085D;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.pesquisa-filter-chip button {
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #06085D;
+}
+
+.pesquisa-add-filter-wrapper {
+  position: relative;
+}
+
+.pesquisa-add-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #22DA1C;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.pesquisa-add-filter-btn:hover {
+  background-color: #19AE14;
+}
+
+.pesquisa-clear-filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #ffffff;
+  color: #AE1419;
+  border: 1px solid #FBB4B5;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.pesquisa-clear-filters-btn:hover {
+  background-color: #FEEAEA;
+}
+
+.pesquisa-genre-picker {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.pesquisa-genre-picker button {
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #19191D;
+  font-size: 0.9rem;
+}
+
+.pesquisa-genre-picker button:hover {
+  background-color: #EFEFFE;
+}
+
+.pesquisa-genre-empty {
+  padding: 0.7rem 1rem;
+  color: #A0A0A6;
+  font-size: 0.85rem;
+}
+
+.pesquisa-loading {
+  text-align: center;
+  color: #585861;
+  padding: 2rem 0;
+}

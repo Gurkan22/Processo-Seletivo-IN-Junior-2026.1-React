@@ -1,0 +1,29 @@
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: #9697F8;
+  margin-top: auto;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+}

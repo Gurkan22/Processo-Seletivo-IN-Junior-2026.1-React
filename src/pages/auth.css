@@ -1,0 +1,133 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #C3C3FB 0%, #F0F0F1 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-logo {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(180deg, #7B7B83 0%, #1419AE 60%, #06085D 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h1 {
+  font-size: 2rem;
+  color: #19191D;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  color: #37373E;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.auth-subtitle a {
+  color: #1419AE;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: #585861;
+  margin-bottom: 0.4rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #C7C7CB;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #19191D;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper input:focus {
+  border-color: #1419AE;
+}
+
+.input-icon {
+  position: absolute;
+  right: 1rem;
+  color: #A0A0A6;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #AE1419;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.auth-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.auth-actions label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #585861;
+}
+
+.auth-actions a {
+  color: #1419AE;
+  text-decoration: none;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: #1419AE;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #06085D;
+}

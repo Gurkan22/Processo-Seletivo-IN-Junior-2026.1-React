@@ -1,0 +1,30 @@
+.movie-list-page h1 {
+  color: #19191D;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.movie-list-search {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background-color: #ffffff;
+  border: 1px solid #C7C7CB;
+  border-radius: 24px;
+  padding: 0.7rem 1.2rem;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+}
+
+.movie-list-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.movie-list-loading {
+  color: #585861;
+  text-align: center;
+  padding: 2rem 0;
+}

@@ -1,0 +1,72 @@
+.review-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(25, 25, 29, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.review-modal {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.review-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #585861;
+}
+
+.review-modal h2 {
+  color: #19191D;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.review-modal-stars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.review-modal-rating-value {
+  font-weight: bold;
+  color: #1419AE;
+  font-size: 1.1rem;
+}
+
+.review-modal-textarea {
+  width: 100%;
+  border: 1px solid #C7C7CB;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.review-modal-textarea:focus {
+  border-color: #1419AE;
+}
+
+.review-modal-error {
+  color: #AE1419;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}

@@ -1,0 +1,108 @@
+.minhas-reviews-page h1 {
+  color: #19191D;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.minhas-reviews-loading,
+.minhas-reviews-empty {
+  color: #585861;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.minhas-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.minhas-reviews-card {
+  display: flex;
+  gap: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.minhas-reviews-poster {
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.minhas-reviews-poster img,
+.minhas-reviews-poster-placeholder {
+  width: 80px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.minhas-reviews-poster-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #C3C3FB;
+  color: #06085D;
+  padding: 0.3rem;
+}
+
+.minhas-reviews-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.minhas-reviews-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.minhas-reviews-movie-title {
+  font-weight: bold;
+  color: #1419AE;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.minhas-reviews-movie-title span {
+  color: #7B7B83;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.minhas-reviews-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.minhas-reviews-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #C7C7CB;
+  background: none;
+  cursor: pointer;
+  color: #585861;
+}
+
+.minhas-reviews-actions button:hover {
+  background-color: #EFEFFE;
+  color: #1419AE;
+}
+
+.minhas-reviews-text {
+  color: #37373E;
+  line-height: 1.5;
+}

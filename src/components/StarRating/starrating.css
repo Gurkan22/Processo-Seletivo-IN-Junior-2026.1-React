@@ -1,0 +1,37 @@
+.star-rating-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-rating-input {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-input-wrapper {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.star-input-half {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.star-input-half-left {
+  left: 0;
+}
+
+.star-input-half-right {
+  right: 0;
+}
