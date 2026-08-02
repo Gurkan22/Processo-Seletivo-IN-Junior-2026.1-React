@@ -42,6 +42,14 @@ export function Pesquisa() {
   }, []);
 
   useEffect(() => {
+    const urlQuery = searchParams.get('q') || '';
+    if (urlQuery !== query) {
+      setQuery(urlQuery);
+      runSearch(1, urlQuery, selectedGenreIds);
+    }
+  }, [searchParams]);
+
+  useEffect(() => {
     const timeoutId = setTimeout(() => {
       setSearchParams(query ? { q: query } : {});
       runSearch(1, query, selectedGenreIds);

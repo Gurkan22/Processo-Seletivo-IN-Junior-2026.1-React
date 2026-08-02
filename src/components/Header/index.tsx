@@ -1,5 +1,5 @@
 import { useState, useContext, useRef, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Search, User, Heart, Eye, Star, LogOut } from 'lucide-react';
 import { AuthContext } from '../../contexts/auth-context';
 import './header.css';
@@ -10,7 +10,12 @@ export function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const { user, isAuthenticated, logout } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
   const userMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setSearchQuery('');
+  }, [location.pathname]);
 
   useEffect(() => {
     if (!isDropdownOpen) return;
@@ -29,6 +34,7 @@ export function Header() {
     e.preventDefault();
     if (searchQuery.trim()) {
       navigate(`/pesquisa?q=${searchQuery}`);
+      setSearchQuery('');
     }
   };
 
