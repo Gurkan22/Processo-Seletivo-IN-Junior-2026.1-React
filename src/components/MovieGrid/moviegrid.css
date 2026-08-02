@@ -12,6 +12,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
 .movie-grid-card-wrapper {
   position: relative;
 }
@@ -86,6 +93,27 @@
 .movie-grid-remove-btn:hover {
   background-color: #71090C;
   transform: scale(1.08);
+}
+
+@media (max-width: 480px) {
+  .movie-grid-remove-btn {
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .movie-grid-title {
+    font-size: 0.85rem;
+  }
+
+  .movie-grid-year {
+    font-size: 0.75rem;
+  }
+
+  .movie-grid-info {
+    padding: 0.5rem 0.6rem;
+  }
 }
 
 .movie-grid-title {

@@ -1,0 +1,16 @@
+.layout-main {
+  flex: 1;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .layout-main {
+    padding: 1.25rem 1rem;
+  }
+}

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 2rem 1.5rem;
   background: linear-gradient(180deg, #C3C3FB 0%, #F0F0F1 100%);
   font-family: 'Inter', sans-serif;
 }
@@ -130,4 +131,19 @@
 
 .btn-primary:hover {
   background-color: #06085D;
+}
+
+@media (max-width: 480px) {
+  .auth-logo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-card h1 {
+    font-size: 1.6rem;
+  }
 }
