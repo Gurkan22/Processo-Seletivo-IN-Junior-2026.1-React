@@ -64,6 +64,15 @@ export function Header() {
         </button>
       </form>
 
+      <button
+        type="button"
+        className="header-search-icon-btn"
+        onClick={() => navigate('/pesquisa')}
+        aria-label="Pesquisar"
+      >
+        <Search size={22} />
+      </button>
+
       <div className="header-user" ref={userMenuRef}>
         <button className="user-button" onClick={handleUserButtonClick}>
           <User size={28} />
